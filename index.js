@@ -16,6 +16,18 @@ for(item of buttons){
         }
         else if(buttonText=='='){
             screen.value = eval(screenValue);
+            screenValue = screen.value;
+        }
+        else if(buttonText=='Del'){
+            if(screenValue!=""){
+                var temp = screenValue;
+                screenValue="";
+                for(var i=0; i<temp.length-1; i++)
+                {
+                    screenValue+=temp[i];
+                }
+            }
+            screen.value = screenValue;
         }
         else{
             screenValue += buttonText;
