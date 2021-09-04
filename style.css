@@ -1,24 +1,79 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+h1{
+    font-weight: 400;
+    font-size: 2.6rem;
+}
 .container{
     text-align: center;
-    margin-top: 23px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 table{
     margin: auto;
+    height: 100%;
 }
-input{
-    border: 5px solid black;
+td{
+    padding: 0;
+    display: table-cell;
+}
+input[type="text"]{
+    padding: 16px 8px;
+    width: 100%;
+    max-height: 100%;
+    border:0;
     font-size: 30px;
-    
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+input:focus{
+    outline: none;
 }
 button{
-    font-size: 40px;
-    background-color: violet;
+    display: block;
+    position: relative;
+    background-color: #eee;
     width: 90px;
     height: 60px;
+    border:1px solid #aaa;
+    border-radius: 4px;
+    color: #333;
+    font-size: 1.8rem;
+}
+button:hover{
+    background-color: #cfcfcf;
+}
+button:active{
+    background-color: #bfbfbf;
 }
 .calculator{
-    background-color: rgb(53, 158, 12);
-    padding: 23px;
-    border-radius: 53px;
+    background-color: rgb(220, 235, 233);
+    padding: 24px;
+    border-radius: 8px;
     display: inline-block;
+}
+#clear{
+    background-color: tomato;
+    margin-left: auto;
+}
+#clear:hover{
+    background-color: rgb(230, 77, 50);
+}
+#eql{
+    background-color: lightgreen;
+}
+#eql:hover{
+    background-color: rgb(119, 206, 119);
+}
+#add{
+    height: 120px;
 }
